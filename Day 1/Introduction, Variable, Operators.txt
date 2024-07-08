@@ -1,0 +1,40 @@
+#What is Python ?
+Python is a high level of programming language, which is popular is used by everywhere.
+
+#Setup of Python in system
+Install Python-> Download and Install
+
+Install Virtual Environment: pip install virtualenv
+
+Create virtual environment: python -m venv <env name> #example python -m venv 100DaysCoding
+
+Activate virtual environment: 100DaysCoding\Scripts\activate.bat
+
+Deactivate virtual environment: environment
+______________________________________________________________________________________________
+
+Variables:
+x = 10  # Integer
+y = 3.14  # Float
+name = "Jyoti"  # String
+
+Data Types:
+Integers: Whole numbers without decimals.
+Floats: Numbers with decimals.
+Strings: Text enclosed in single or double quotes.
+Lists: Ordered collections of items.
+Tuples: Immutable collections of items.
+Dictionaries: Key-value pairs.
+
+______________________________________________________________________________________________
+
+Operators
+
+Arithmetic operators: +, -, *, /, %, ** (exponentiation), // (floor division).
+Comparison operators: ==, !=, <, >, <=, >=.
+Logical operators: and, or, not.
+Assignment operators: =, +=, -=, *=, /=, %=, **=, //=.
+Bitwise operators: &, |, ^, ~, <<, >>.
+Strings: Strings can be enclosed in single or double quotes. You can use the + operator to concatenate strings.
+
+
