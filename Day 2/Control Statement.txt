@@ -1,0 +1,52 @@
+#Main Control Flow Statements
+
+1) if else statement
+  if condition:
+    statement
+  else:
+    statement
+
+Example: 
+age = 20
+if age>18:
+    print("eligible for vote")
+else:
+    print("age is less")
+
+____________________________
+Types of if else statements
+___________________________
+a) if statement
+b) if else statement
+c) nested if else: for single evalution after if statement.
+Example:
+if(condition):
+  if(condition):
+  if(condition):
+else:
+  statement
+
+Example:
+age = 56
+
+if age>18:
+    if(age<55):
+        print("they are eligible for govt jobs")
+    else:
+        print("Not eligible")
+
+d) elif statement: multiple statements can be evaluate after elif statment.
+syntax:
+if condition:
+    expression
+elif condition:
+    expression
+else:
+    expression
+
+e) Ternary or shorthand if else:
+Syntax: statement_when_True if condition else statement_when_False
+Example:
+i = 15
+print(True) if i<20 else print(False)
+
