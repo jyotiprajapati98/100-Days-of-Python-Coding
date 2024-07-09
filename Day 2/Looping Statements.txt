@@ -1,0 +1,9 @@
+Loop statements in Python:
+
+1) for loop
+for var in iterable:
+  statement
+
+2) while loop
+while(expression):
+  statement
