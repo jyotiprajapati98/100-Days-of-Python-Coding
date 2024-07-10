@@ -1,0 +1,116 @@
+For Loop: In python for loops are like the for each in c++.
+
+Syntax:
+for var in iterable:
+  statement
+
+Here iterables are basically contairs or collecitons such as string, List, Tuple, Set, Dictionary or Dict.
+
+For loop example:
+arr = ["a", "b", "c"]
+for i in arr:
+  print(i)
+
+
+Example of Iterators:
+#Here the next will give the next successor value
+
+arr = ['a', 'b', 'c'] #List
+itr = iter(arr) #iter to traverse the objects
+>>> itr = iter(arr)
+>>> next(itr)
+'a'
+>>> next(itr)
+'b'
+>>> next(itr)
+'c'
+>>> next(itr)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    next(itr)
+    ~~~~^^^^^
+StopIteration
+
+#It will generate the above error in case user want to iterate the unavailale values.
+_________________________________________________________________________________________________________________
+
+To get all the values at the same using iterator
+>>>arr = ['a', 'b', 'c']
+>>> itr = iter(arr) # assing the iterators
+>>> list(itr) # list out the all iterators then print it
+['a', 'b', 'c']
+
+__________________________________________________________--
+
+By using dictionaries:
+>>> dict_ = {'foo':1, 'bar':2, 'len':3}
+>>> for i in dict_:
+...     print(i) # to print values print(dict_[i])
+...
+foo
+bar
+len
+
+By using String
+>>> for x in "Jyoti":
+...     print(x)
+...
+J
+y
+o
+t
+i
+
+With Break statement:
+fruits = ["a", "b", "c"]
+for x in fruits:
+  if x == "b":
+    break
+  print(x)
+
+Range() in for loop:
+range(a) # start from 0 and end on a-1
+
+for i in range(5):
+  print(i) 
+#it will print the 0, 1, 2, 3, 4, 5
+
+range(a, b) # a is start and b is end
+for i in range(2, 5):
+  print(i)
+
+#it will print the 2, 3, 4
+
+range (a, b, c) # start from a, end on b with skip c
+example
+
+>>> for i in range(2, 15, 3):
+...     print(i)
+...
+2
+5
+8
+11
+14
+
+_____________________________________________-
+Nested for loop:
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+#with nested loop and List
+for x in adj:
+  for y in fruits:
+    print(x, y)
+
+red apple
+red banana
+red cherry
+big apple
+big banana
+big cherry
+tasty apple
+tasty banana
+tasty cherry
+
