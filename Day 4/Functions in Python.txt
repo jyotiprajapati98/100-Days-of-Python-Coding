@@ -1,0 +1,1 @@
+Functions: In Python functions are blocks of code that perform a specific task. You can define your own functions using the def keyword.
