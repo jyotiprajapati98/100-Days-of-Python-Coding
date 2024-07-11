@@ -1,0 +1,165 @@
+While Loop: It is a indefinite type loop. It will run the statements until the condition is satisfied.
+
+Syntax:
+while expression:
+  statement
+
+Example:
+>>> cnt=0 #initialize
+>>> while (cnt < 5): # write the condition
+...     cnt = cnt + 1 #increment it by 1
+...     print("Good Morning") # print statement
+...
+Good Morning
+Good Morning
+Good Morning
+Good Morning
+Good Morning
+
+__________________________________________________
+
+Control statements with Python:
+a) Continue statement: return the control to the begining.
+i=0
+s='jyoti'
+while i<len(s):
+    if s[i] == 'o' or s[i] == 'i':
+        i = i + 1
+        continue
+    print('letter:', s[i])
+    i = i+1 #increment by 1
+
+output
+_____________
+letter: j
+letter: y
+letter: t
+
+
+b) Break statement: breaks the loop and exit
+Example:
+i=0
+s='jyoti'
+while i<len(s):
+    if s[i] == 'o' or s[i] == 'i':
+        i = i + 1
+        break
+    print('letter:', s[i])
+    i = i+1 #increment by 1
+
+output:
+letter: j
+letter: y
+
+c) Pass statement: Write the empty loops.
+Exmaple:
+i=0
+s='jyoti'
+while i<len(s):
+        i = i + 1
+        pass
+print('Loop is running for :', i, 'times')
+
+Output
+Loop is running for : 5 times
+
+
+d) While loop with else statement: There are two conditions if the break is available then loop will break otherwise else statement will print.
+Example 1:
+>>> i =0
+>>> while i< 4:
+...     i+=1
+...     print(i)
+... else: #here not using the break then the else statement will also execute
+...     print("Break is not available")
+...
+1
+2
+3
+4
+Break is not available
+
+Example 2:
+>>> i =0
+>>> while i< 4:
+...     i+=1
+...     print(i)
+...     break #break statemennt is added so else will not print now
+... else:
+...     print("Break is added")
+...
+1
+
+e) Sentinel Controlled Statement: In this no counter variables are used break the end condition is unknown.
+Example:
+>>> a = int(input('enter a number, -1 to quit the loop: '))
+enter a number, -1 to quit the loop: 6
+>>> while a!= -1:
+...     a = int(input('enter a number, -1 to quit the loop : '))
+...
+enter a number, -1 to quit the loop : 2
+enter a number, -1 to quit the loop : 3
+enter a number, -1 to quit the loop : 4
+enter a number, -1 to quit the loop : 1
+enter a number, -1 to quit the loop : 4
+enter a number, -1 to quit the loop : 5
+enter a number, -1 to quit the loop : 6
+enter a number, -1 to quit the loop : 5
+enter a number, -1 to quit the loop : 3
+enter a number, -1 to quit the loop : 2
+enter a number, -1 to quit the loop : 1
+enter a number, -1 to quit the loop : -1
+
+f) While loop uisng Boolean statement: It is use to create infinite loop where the loop will break on a specific conditions.
+Exmaple:
+count = 0
+while True: 
+	# Increment the counter 
+	count += 1
+	print(f"Count is {count}") 
+	if count == 10: 
+		# If so, exit the loop 
+		break
+print("The loop has ended.")
+
+output:
+Count is 1
+Count is 2
+Count is 3
+Count is 4
+Count is 5
+Count is 6
+Count is 7
+Count is 8
+Count is 9
+Count is 10
+The loop has ended.
+
+Examples:
+initial_height = 10
+bounce_factor = 0.5
+height = initial_height 
+while height > 0.1: 
+	print("The ball is at a height of", height, "meters.") 
+	print("Current height is", height, "bounce_factor is", bounce_factor)
+	height *= bounce_factor #height * bounce_factor = height
+	
+print("The ball has stopped bouncing.")
+
+output:
+The ball is at a height of 10 meters.
+Current height is 10 bounce_factor is 0.5
+The ball is at a height of 5.0 meters.
+Current height is 5.0 bounce_factor is 0.5
+The ball is at a height of 2.5 meters.
+Current height is 2.5 bounce_factor is 0.5
+The ball is at a height of 1.25 meters.
+Current height is 1.25 bounce_factor is 0.5
+The ball is at a height of 0.625 meters.
+Current height is 0.625 bounce_factor is 0.5
+The ball is at a height of 0.3125 meters.
+Current height is 0.3125 bounce_factor is 0.5
+The ball is at a height of 0.15625 meters.
+Current height is 0.15625 bounce_factor is 0.5
+The ball has stopped bouncing.
+
