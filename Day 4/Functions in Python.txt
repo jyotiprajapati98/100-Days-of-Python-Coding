@@ -1,1 +1,83 @@
 Functions: In Python functions are blocks of code that perform a specific task. You can define your own functions using the def keyword.
+
+Syntax:
+def function_name(parameters):
+  statements or function body
+
+Example:
+#method 
+def print_name(name):
+    print("your name is:", name)
+return statement #if require
+    
+
+name = str(input("enter your name: ")) #take user input 
+print_name(name) #call the method
+
+Output:
+enter your name: Jyoti
+your name is: Jyoti
+____________________________________________________
+
+Type of the function:
+a) Built-in library function: These are Standard functions in Python that are available to use.
+b) User-defined function: We can create our own functions based on our requirements.
+
+Example of user defined method:
+#method
+def addition(n1, n2):
+    n3 = n1 + n2
+    return n3
+
+n1 = int(input("enter number 1 : ")) #take user input
+n2 = int(input("enter number 2 : "))
+
+summation = addition(n1, n2) #call the method
+print(f"summation of {n1} and {n2} is : {summation}")
+
+Output:
+enter number 1 : 10
+enter number 2 : 5
+summation of 10 and 5 is : 15
+
+____________________________________________________________-
+Types of function arguments:
+a) Default argument: Add the parameters statically.
+
+Example:
+def myFunc(x, y=10):
+    print(x, y)
+
+x = 20
+myFunc(x)
+
+output: 20, 10
+
+b) Keyword argument: arguments send at run time, while calling function.
+Example:
+def myFunc(x, y):
+    print(x, y)
+
+myFunc(x=5, y=7)
+myFunc(x=10, y=15)
+
+output:
+5 7
+10 15
+
+c) positional parameters: during the function call direct value will send as argument.
+Example:
+def myFunc(name, age):
+    print(name)
+    print(age)
+
+myFunc("jyoti", 12)
+
+Output: 
+jyoti
+12
+
+Ad) rbitrary Keyword  Arguments: In Python *args, and **kwargs can pass a variable number of arguments to a function using special symbols. There are two special symbols:
+
+*args in Python (Non-Keyword Arguments)
+**kwargs in Python (Keyword Arguments)
