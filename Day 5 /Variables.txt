@@ -1,0 +1,1 @@
+Variables: Varibales are basically containers that can store the values. No need to declare the varibales priorly. 
