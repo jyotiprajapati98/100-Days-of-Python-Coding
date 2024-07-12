@@ -77,7 +77,37 @@ Output:
 jyoti
 12
 
-Ad) rbitrary Keyword  Arguments: In Python *args, and **kwargs can pass a variable number of arguments to a function using special symbols. There are two special symbols:
+d) Arbitrary Keyword  Arguments: In Python *args, and **kwargs can pass a variable number of arguments to a function using special symbols. There are two special symbols:
 
-*args in Python (Non-Keyword Arguments)
-**kwargs in Python (Keyword Arguments)
+1) *args in Python (Non-Keyword Arguments)
+2) **kwargs in Python (Keyword Arguments)
+
+Example: *args
+
+def myFun(*argv):
+    for args in argv:
+        print(args)
+        
+myFun('Hi', 'Buddy', 'thank you', 'for', 'coming')
+
+output:
+Hi
+Buddy
+thank you
+for
+coming
+
+Example: **kwargs
+def myFun(**kwargs):
+    for key, value in kwargs.items():
+        print("%s == %s" % (key, value))
+
+#call method        
+myFun(first = 'Hi', mid = "Buddy", last = "Hows You")
+
+output
+first == Hi
+mid == Buddy
+last == Hows You
+
+
