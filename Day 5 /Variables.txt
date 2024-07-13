@@ -1,1 +1,98 @@
 Variables: Varibales are basically containers that can store the values. No need to declare the varibales priorly. 
+Example:
+num = 10
+name = "Jyoti"
+salary = 120.5
+
+Varibale with multiple values.
+Example:
+a=b=c=20
+print(a)
+print(b)
+print(c)
+
+output:
+20
+20
+20
+
+Example:
+a, b, c = 5, 100.45, "Hello Jyoti"
+print(a)
+print(b)
+print(c)
+
+output:
+5
+100.45
+Hello Jyoti
+
+Concatenation Operation: In case of integer + use for addition and in case of string + for concatenation.
+
+Example:
+a=10
+b=20
+print(a+b)
+
+a = "Hello"
+b = "Buddy"
+print(a+b)
+
+output:
+30
+HelloBuddy
+
+*Global and local variable:
+
+Example:
+
+x = 20
+def globalVar():
+     global x # using global keyword
+     
+     x = x + 5 #increment by 5
+     print("Value of x inside a function :", x)
+     
+globalVar()
+print("Value of x outside a function :", x)
+
+output:
+Value of x inside a function : 25
+Value of x outside a function : 25
+
+Example for String, Integer, Dictonary, and Boolean:
+var = 110
+print("Numeric data :", var)
+
+#charecter types
+str1 = 'Welcome to the Python World'
+print("String with the use of Single quotes")
+print(str1)
+
+#boolean
+print(type(True))
+print(type(False))
+
+#creating a set
+set1 = set("HelloWorld")
+print("\nSet with the use of String")
+print(set1)
+
+#creating a Dictionary
+Dict = {1:'Hello', 2:'Buddy', 3:'How are you!'}
+print("\nDictionary with the use of Integer value")
+print(Dict)
+
+Output:
+Numeric data : 110
+String with the use of Single quotes
+Welcome to the Python World
+<class 'bool'>
+<class 'bool'>
+
+Set with the use of String
+{'d', 'H', 'l', 'e', 'W', 'o', 'r'}
+
+Dictionary with the use of Integer value
+{1: 'Hello', 2: 'Buddy', 3: 'How are you!'}
+
