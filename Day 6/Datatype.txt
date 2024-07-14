@@ -1,1 +1,109 @@
+Datatypes in Python: Datatypes are the classification or categorization of the dataset.
+.type() function is use to identify the data types.
+
+1) Numeric
+Example:
+a = 10
+print("Type of a :", type(a))
+
+b = 10.5
+print("Type of a :", type(b))
+
+c = 10+2j
+print("Type of a :", type(c))
+
+Output:
+Type of a : <class 'int'>
+Type of a : <class 'float'>
+Type of a : <class 'complex'>
+
+
+2) Sequence data types
+a) String: Single, double, and triple quotes can be use to write string.
+Example:
+
+# Example of different string  types 
+
+String1 = 'Welcome to the World'
+print("String with the use of Single Quotes: ")
+print(String1)
+
+String1 = "I'm a Jyoti"
+print("\nString with the use of Double Quotes: ")
+print(String1)
+
+print(type(String1))
+
+String1 = '''I'm a Jyoti'''
+print("\nString with the use of Triple Quotes: ")
+
+print(String1)
+
+print(type(String1))
+
+String1 = '''Happy 
+            For 
+            Life'''
+print("\nCreating a multiline String: ")
+print(String1)
+
+Output**********************************8
+
+String with the use of Single Quotes: 
+Welcome to the World
+
+String with the use of Double Quotes: 
+I'm a Jyoti
+<class 'str'>
+
+String with the use of Triple Quotes: 
+I'm a Jyoti
+<class 'str'>
+
+Creating a multiline String: 
+Happy 
+            For 
+            Life
+
+
+b) List data type: It is same as array in c/c++.
+Do not need same data types and store ordered collection of data.
+
+c) Tuple data type: It also an ordered collection of Python objects. The only difference between a tuple and a list is that tuples are immutable i.e. tuples cannot be modified after it is created. It is represented by a tuple class.  
+
+Example:
+Tuple1 = ()
+print("Initial empty Tuple: ")
+print(Tuple1)
+Tuple1 = ('Geeks', 'For')
+print("\nTuple with the use of String: ")
+print(Tuple1)
+list1 = [1, 2, 4, 5, 6]
+print("\nTuple using List: ")
+print(tuple(list1))
+Tuple1 = tuple('Geeks')
+print("\nTuple with the use of function: ")
+print(Tuple1)
+Tuple1 = (0, 1, 2, 3)
+Tuple2 = ('python', 'geek')
+Tuple3 = (Tuple1, Tuple2)
+print("\nTuple with nested tuples: ")
+print(Tuple3)
+
+
+Output:
+Initial empty Tuple: 
+()
+
+Tuple with the use of String: 
+('Geeks', 'For')
+
+Tuple using List: 
+(1, 2, 4, 5, 6)
+
+Tuple with the use of function: 
+('G', 'e', 'e', 'k', 's')
+
+Tuple with nested tuples: 
+((0, 1, 2, 3), ('python', 'geek'))
 
