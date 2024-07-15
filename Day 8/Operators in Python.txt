@@ -1,0 +1,13 @@
+Operators: It is use to perform operations on variables and values.
+Operation needed Operators and operand.
+
+Example: sum = a + b # + is operator and a, b is operand.
+
+Types of Operators in Python:
+1) Arithmetic Operators:
+
+2) Comparison Operators
+3) Logical Operators
+4) Bitwise Operators
+5) Assignment Operators
+6) Identity Operators and Membership Operators
