@@ -107,3 +107,53 @@ Tuple with the use of function:
 Tuple with nested tuples: 
 ((0, 1, 2, 3), ('python', 'geek'))
 
+
+3) Set data type: The set items cannot be access using index numbers because no index value in present. It stored items in ordered form.
+Example:
+set1 = set(["Hello", "Buddy", "Hello"])
+
+print(set1)
+
+
+#traverse with loop
+
+for i in set1:
+    print(i, end=" ")
+
+    
+#check the data is set1
+print("\n")
+print("Hello" in set1)
+
+Output*************************8
+{'Hello', 'Buddy'}
+Hello Buddy 
+
+True
+
+4) Dictionary Data type: It is a unordered data collection data type like Map. Stored the data in form of key-value pairs.
+
+Example: 
+Dict = {} #empty dictionary
+print(Dict)
+
+Dict = {1:'a', 2:'b', 3:'c'} #integerkeys
+print(Dict)
+
+Dict = {'Name': 'Jyoti', 1:[1, 2, 3, 4]} # mix items
+print(Dict)
+
+#use of dict 
+Dict = dict({1:'a', 2:'b', 3:'c'})
+print(Dict)
+
+Dict = dict([(1,'a'), (2,'b'), (3,'c')])
+print(Dict)
+
+Output****************************************
+{}
+{1: 'a', 2: 'b', 3: 'c'}
+{'Name': 'Jyoti', 1: [1, 2, 3, 4]}
+{1: 'a', 2: 'b', 3: 'c'}
+{1: 'a', 2: 'b', 3: 'c'}
+
