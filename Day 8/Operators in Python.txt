@@ -37,8 +37,74 @@ print(expo)
 8
 
 
-2) Comparison Operators
-3) Logical Operators
-4) Bitwise Operators
-5) Assignment Operators
-6) Identity Operators and Membership Operators
+2) Comparison Operators: ==, !=, <, >, <=, >=.
+
+3) Logical Operators: and, or, not.
+
+4) Bitwise Operators: OR, AND, XOR, Left Shift, Right Shift.
+
+5) Assignment Operators: =, +=, -=, *=, %=, //=, **==, := (for expression calculation).
+
+6) Identity Operators and Membership Operators:
+
+Membership: 
+a) IN Operator:
+Example:
+g in google # True
+b in Apple # False
+
+b) Not in:
+Example:
+a not in google #True
+
+*********** Identity ***************
+a) is: The is operator evaluates to True if the variables on either side of the operator point to the same object in the memory and false otherwise.
+Example:
+num1 = 15
+num2 = 5
+
+lst1 = [1, 2, 3]
+lst2 = [1, 2, 3]
+lst3 = lst1
+
+str1 = "hello world"
+str2 = "hello world"
+
+# using 'is' identity operator on different datatypes
+print(num1 is num2)
+print(lst1 is lst2) #because both the lists refers to different objects in the memory.
+print(str1 is str2)
+print(str1 is str2)
+
+*********** Output *****************
+False
+False
+True
+True
+
+b) is not: The is not operator evaluates True if both variables on the either side of the operator are not the same object in the memory location otherwise it evaluates False.
+
+Example: 
+
+num1 = 15
+num2 = 15
+
+lst1 = [1, 2, 3]
+lst2 = [1, 2, 3]
+lst3 = lst1
+
+str1 = "hello world"
+str2 = "hello world"
+
+# using 'is' identity operator on different datatypes
+print(num1 is not num2)
+print(lst1 is not lst2) #because both the lists refers to different objects in the memory.
+print(str1 is not str2)
+print(str1 is not str2)
+
+*************** Output *******************
+False
+True
+False
+False
+
