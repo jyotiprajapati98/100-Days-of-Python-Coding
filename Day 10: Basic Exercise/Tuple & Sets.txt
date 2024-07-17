@@ -1,0 +1,12 @@
+Tuple:
+1) Print the index values.
+fruits = ("a", "b", "c")
+print(fruits[0]) => a
+
+2) length of the tuple:
+print(len(fruits)) => 3
+
+3) print the last item:
+print(fruits[-1]) => c
+
+
