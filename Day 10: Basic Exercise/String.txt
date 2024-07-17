@@ -1,0 +1,39 @@
+1) Remove the white spaces from end and start: strip().
+
+  Example: 
+  txt=" I am Best"
+  print("Before strip: ", txt)
+  print("After strip: ", txt.strip())
+
+  Output:
+  Before strip:   I am Best
+  After strip:  I am Best
+
+2) For Upper Case and Lower case: Use methods are upper(), lower().
+  Example:
+  txt1="i am best"
+  txt2 ="I AM BEST"
+  print("txt1 after upper(): ", txt1.upper())
+  print("txt2 after lower(): ", txt2.lower())
+
+  ************** OUTPUT****************
+  txt1 after upper():  I AM BEST
+  txt2 after lower():  i am best
+
+3) To replace the charecter: replace()
+  Example:
+  txt1="i am best"
+  print("After replace(): ", txt1.replace("best","awesome"))
+
+  *********OUTPUT***************
+  After replace():  i am awesome
+    
+4) Add Placeholder: using {}
+Example:
+
+age=26
+txt="Jyoti is {} years old"
+print(txt.format(age))
+
+***********Output************
+Jyoti is 26 years old
