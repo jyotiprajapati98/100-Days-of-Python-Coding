@@ -9,4 +9,66 @@ print(len(fruits)) => 3
 3) print the last item:
 print(fruits[-1]) => c
 
+SET: 
+a) in operator: to check the item is present in set or not.
+b) add(): to append the item in set.
+c) update(): add multiple items or update the  set.
+Example:
+fruits = {"apple", "banana", "cherry"}
+print(fruits)
+
+#append one item
+fruits.add("kiwi")
+print(fruits)
+
+more_fruits = ["orange", "mango", "grapes"]
+
+#append miltiple items
+fruits.update(more_fruits)
+print(fruits)
+
+****************output****************
+{'cherry', 'apple', 'banana'}
+{'cherry', 'kiwi', 'apple', 'banana'}
+{'cherry', 'mango', 'kiwi', 'apple', 'banana', 'orange', 'grapes'}
+
+d) remove() in set: To remove items from set.
+Example:
+fruits = {"apple", "banana", "cherry"}
+print(fruits) #apple, banana, cherry
+
+#remove one item
+fruits.remove("apple")
+print(fruits)  # banana, cherry
+
+e) Remove() vs Discard(): remove() raise error it item not found whereas the discard keep quite.
+Example:
+fruits = {"apple", "banana", "cherry"}
+print(fruits)
+
+#remove() raise error if item not found
+fruits.remove("kiwi")
+print(fruits)
+
+Output*******************
+{'apple', 'cherry', 'banana'}
+Traceback (most recent call last):
+  File "/home/main.py", line 5, in <module>
+    fruits.remove("kiwi")
+KeyError: 'kiwi'
+
+
+Example for discard():
+fruits = {"apple", "banana", "cherry"}
+print(fruits)
+
+#discard will not do any change or error
+fruits.discard("kiwi")
+print(fruits)
+
+Output*************************
+{'apple', 'cherry', 'banana'}
+{'apple', 'cherry', 'banana'}
+
+
 
