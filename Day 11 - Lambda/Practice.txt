@@ -1,1 +1,30 @@
 Lambda: It can take N numbe rof arguments but have only one expression in function, it is an anonymous function in Pyhton.
+Syntax:
+lambda argument: expression
+
+Example:
+x = lambda a: a + 10
+print(x(5)) # output is 15
+
+Example with two values:
+x = lambda a, b: a * b
+print(x(15, 6)) # return 90
+
+Example:
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(5)
+print(mydoubler(11)) # return 55 here first 5 will go and then mydoubler call.
+
+Example:
+def multi(n):
+  return lambda a : a * n
+
+mydoubler = multi(4)
+mytripler = multi(3)
+
+print(mydoubler(11)) # return 44
+print(mytripler(11)) # return 33
+
+
