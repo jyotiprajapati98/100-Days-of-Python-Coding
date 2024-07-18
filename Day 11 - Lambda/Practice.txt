@@ -1,0 +1,1 @@
+Lambda: It can take N numbe rof arguments but have only one expression in function, it is an anonymous function in Pyhton.
