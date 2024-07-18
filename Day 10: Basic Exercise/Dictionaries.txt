@@ -1,0 +1,58 @@
+Dictionaries:
+As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change. 
+Unordered means that the items do not have a defined order, you cannot refer to an item by using an index.
+Dictonaries are changeable but cannot have duplicate keys.
+
+Methods:
+1) get():
+Example:
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car.get("model")) #output will be Mustang
+
+
+2) Change the value of any item in the dictionary: 
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["year"] = 2020 # change the item value
+print(car) #output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+
+3) Add key-value pair in the dictionary:
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+car["new key"] = "new value" # add new key value in the dictionary
+print(car) #output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'new key': 'new value'}
+
+4) pop(): to remove items from dictionaries.
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "new key":"new value"
+}
+print(car) #Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'new key': 'new value'}
+
+car.pop("new key") # remove the key value in the dictionary
+print(car) #output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+
+5) Clear(): remove all the items from dictionary.
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car) #Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+
+car.clear() # clear the dictionary
+print(car) #output: {}
