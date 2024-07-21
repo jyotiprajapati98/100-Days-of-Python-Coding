@@ -15,7 +15,7 @@ Output*****************
 Jyoti
 
 *****************************************
-The _init_function: The __init__() function is called automatically every time the class is being used to create a new object.
+a) The _init_function: The __init__() function is called automatically every time the class is being used to create a new object.
 
 class Person:
   def __init__(self, name, age):
@@ -30,3 +30,35 @@ print(p1.age)
 Jyoti
 25
 
+b) __Str()__ function: It handle the objects when return type is string.
+Example:
+
+print("Function without _Str()_ function")
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+print(p1)
+
+
+print("\nFunction with _Str()_ function")
+class Person1:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def __str__(self):
+    return f"{self.name}({self.age})"
+
+p1 = Person1("John", 36)
+
+print(p1)
+
+***********OUTPUT************************************
+Function without _Str()_ function
+<__main__.Person object at 0x148a8815f0d0>
+
+Function with _Str()_ function
+John(36)
