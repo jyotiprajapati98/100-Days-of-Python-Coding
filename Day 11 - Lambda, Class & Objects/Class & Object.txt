@@ -36,6 +36,7 @@ Example:
 print("Function without _Str()_ function")
 class Person:
   def __init__(self, name, age):
+#Self is like this statement is C/C++ it indicate the current class variables.
     self.name = name
     self.age = age
 
