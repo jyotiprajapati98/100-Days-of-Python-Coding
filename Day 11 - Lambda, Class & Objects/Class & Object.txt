@@ -63,3 +63,65 @@ Function without _Str()_ function
 
 Function with _Str()_ function
 John(36)
+
+
+
+****************************** OBJECTS ******************************************
+Objects contains the method, it can call the functions.
+
+a) Self Parameter: It refers the current rference or object of the class.
+Example:
+#class name is person
+class Person:
+  def __init__(currObject, name, age):
+    currObject.name = name
+    currObject.age = age
+
+  def myfun(a):
+    print("Hello I am " + a.name) #object.name
+
+p1 = Person("Jyoti", 25) #create object with parameters
+p1.myfun() #call function here
+
+OUTPUT: I am Jyoti
+
+b) Object Modification: We cal modify the object values statically and runtime both.
+Example:
+#class name is person
+class Person:
+  def __init__(currObject, name, age):
+    currObject.name = name
+    currObject.age = age
+
+  def myfun(a):
+    print("Hello I am " + a.name + ", My age is ", a.age) #object.name
+
+p1 = Person("Jyoti", 25) #create object with parameters
+p1.age = 24 #statically object modification
+p1.myfun() #call function here
+
+OUTPUT: Hello I am Jyoti, My age is  24
+
+c) Object deletion: To delete the objects, the del is used. Syntax: del <object name>
+Example:
+#class name is person
+class Person:
+  def __init__(currObject, name, age):
+    currObject.name = name
+    currObject.age = age
+
+p1 = Person("Jyoti", 25) #create object with parameters
+p1.age = 24 #statically object modification
+
+#delete the object
+del p1
+
+print(p1.age)
+
+OUTPUT: 
+Traceback (most recent call last):
+  File "./prog.py", line 13, in <module>
+NameError: name 'p1' is not defined
+
+
+
