@@ -76,3 +76,148 @@ OUTPUT:
 Satyam 102
 Mayank 103
 Emp class called
+
+
+*************** SUPER() FUNCTION *************************
+It allows to access the parent class objects in the child class.
+
+Example:
+# parent class
+class Person():
+    def __init__(self, name, age):
+    	self.name = name
+    	self.age = age
+
+    def display(self):
+    	print(self.name, self.age)
+
+
+# child class
+class Student(Person):
+    def __init__(self, name, age):
+    	self.sName = name
+    	self.sAge = age
+    	# inheriting the properties of parent class
+    	super().__init__("Rahul", age)
+    
+    def displayInfo(self):
+    	print(self.sName, self.sAge)
+
+obj = Student("Mayank", 23)
+obj.display()
+obj.displayInfo()
+
+OUTPUT:
+Rahul 23
+Mayank 23
+
+****************************************
+We can add the additional details after inheriting the parent class in the child class. Like additional parameters.
+
+Example:
+# parent class
+class Person():
+    def __init__(self, name, age):
+    	self.name = name
+    	self.age = age
+
+    def display(self):
+    	print(self.name, self.age)
+
+
+# child class
+class Student(Person):
+    def __init__(self, name, age, dob):
+    	self.sName = name
+    	self.sAge = age
+    	self.sdob = dob
+    	# inheriting the properties of parent class
+    	super().__init__("Rahul", age)
+    
+    def displayInfo(self):
+    	print(self.sName, self.sAge, self.sdob)
+
+obj = Student("Mayank", 23, "04-03-98")
+obj.display()
+obj.displayInfo()
+
+OUTPUT:
+Rahul 23
+Mayank 23 04-03-98
+
+*******************************************************
+
+Types of Inheritance:
+1) Single Inheritance
+2) Multiple Inheritance
+3) Multi Level Inheritance
+Example:
+
+class Base(object):
+    #constuctur for this class
+    def __init__(self, name):
+        self.name = name
+    
+    def getName(self):
+        return self.name
+        
+
+#Sub class
+class Child(Base):
+    
+    #constuctur for this class
+    def __init__(self, name, age):
+        Base.__init__(self, name)
+        self.age = age
+        
+    def getAge(self):
+        return self.age
+        
+        
+class GrandChild(Child):
+    
+    #constuctur for this class
+    def __init__(self, name, age, address):
+        Child.__init__(self, name, age)
+        self.address = address
+        
+    def getAddress(self):
+        return self.address
+        
+
+#driver code 
+grand = GrandChild("Jyoti Prajapati", 23, "Raipur")
+print(grand.getName(), grand.getAge(), grand.getAddress())
+        
+
+************ OUTPUT ************
+Jyoti Prajapati 23 Raipur
+
+4) Hierarchical Inheritance
+5) Hybrid Inheritance
+
+#Private members of the parent class: Create private members using __ (double underscore) in front of variables or object.
+Example:
+
+class C(object):
+    def __init__(self):
+        self.c = 21
+        
+        self.__d = 42 # private variable
+        
+class D(C):
+    def __init__(self):
+        self.e = 85
+        C.__init__(self)
+        
+obj = D()
+
+print(obj.c)
+print(obj.__d)
+
+OUTPUT:
+21
+Traceback (most recent call last):
+  File "/home/main.py", line 15, in <module>
+    print(obj.__d)
+AttributeError: 'D' object has no attribute '__d'
