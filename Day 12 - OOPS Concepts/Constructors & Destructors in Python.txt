@@ -1,1 +1,3 @@
-s
+Constructors: Use to initialize the objects.
+def __init__(self):
+  {Body}
