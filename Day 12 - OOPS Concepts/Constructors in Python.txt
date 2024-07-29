@@ -1,0 +1,78 @@
+Constructors: Use to initialize the objects.
+def __init__(self):
+  {Body}
+
+Types of Constructors:
+1) Default COnstructor: A simple constructor which doesn’t accept any arguments.
+Example: 
+
+class GeekforGeeks:
+ # default constructor
+    def __init__(self):
+        self.name = "Jyoti"
+
+    def print_name(self):
+        print(self.name)
+
+
+#object of the class
+obj = GeekforGeeks()
+
+# calling the instance method using the object obj
+obj.print_name()
+
+OUTPUT: Jyoti
+
+2) Parameterized Constructor: Constructor with parameters.
+Example:
+class Addition:
+    #varibales in the class
+    first = 0
+    second = 0
+    answer = 0
+
+    # parameterized constructor
+    def __init__(self, f, s):
+        self.first = f
+        self.second = s
+
+    def display(self):
+        print("First number = " + str(self.first))
+        print("Second number = " + str(self.second))
+        print("Addition of two numbers = " + str(self.answer))
+
+    def calculate(self):
+        self.answer = self.first + self.second
+
+
+# this will invoke parameterized constructor
+ob1 = Addition(100, 200)
+
+# creating second object of same class
+ob2 = Addition(15, 20)
+
+# perform Addition on obj1
+ob1.calculate()
+
+# perform Addition on obj2
+ob2.calculate()
+
+# display result of obj1
+ob1.display()
+
+# display result of obj2
+ob2.display()
+
+
+OUTPUT:
+First number = 100
+Second number = 200
+Addition of two numbers = 300
+First number = 15
+Second number = 20
+Addition of two numbers = 35
+
+NOTE:
+1) We can have two __init__  method in one function or class.
+
+
