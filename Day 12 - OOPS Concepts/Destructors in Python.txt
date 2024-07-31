@@ -1,0 +1,31 @@
+Destructors: It called when an object get destroyed. It is not needed much in Python because python has automatic garbade collector for memory management.
+
+Syntax:
+def __del__(self):
+  #body
+
+Example:
+# Python program to illustrate destructor
+class Employee:
+
+	# Initializing
+	def __init__(self):
+		print('Employee created.')
+		
+	def __del__(self):
+	    print('destructor called and Employee is deleted')
+	    
+#create object of the class
+obj = Employee()
+
+#delete the object with del name, it automatically invoke
+del obj
+
+#because it is delete
+#print(obj)
+
+
+OUTPUT: 
+Employee created.
+destructor called and Employee is deleted
+
