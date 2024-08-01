@@ -1,0 +1,144 @@
+Iterators: It is an Object that contains countable number of values means we can traverse through all the values.
+
+Whereas in python, an iterator is an object that implements iterator protocol.
+It consist:
+1) __iter__() and
+2) __next__().
+
+Iterator vs Iterable:
+List, tuple, dictionaries, and sets are all iterable objects. This objects have iter() method.
+
+Example:
+tuple1 = ("a", "b", "c")
+iter1 = iter(tuple1)
+
+print(next(iter1))
+print(next(iter1))
+print(next(iter1))
+
+OUTPUT:
+a
+b
+c
+
+Example:
+mystr = "banana"
+myit = iter(mystr)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+OUTPUT:
+b
+a
+n
+a
+n
+a
+*****************************************
+
+Looping through Iterator:
+Example:
+tuple1 = ("a", "b", "c")
+
+for x in tuple1:
+    print(x)
+    
+    
+# type 2
+print("\nUsing String: \n")
+str1 =  "banana"
+for x in str1:
+    print(x)
+
+OUTPUT:
+a
+b
+c
+
+Using String: 
+
+b
+a
+n
+a
+n
+a
+
+Create an Iterator: By implementing the __iter__(). 
+Example:
+#increase and print number 
+
+class MyNumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
+
+  def __next__(self):
+    x = self.a
+    self.a += 1
+    return x
+
+myclass = MyNumbers()
+myiter = iter(myclass)
+
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+
+OUTPUT: 
+1
+2
+3
+4
+5
+**********************************************8
+
+StopIteration: It is use to prevent the iteration form going on forever.
+Example:
+class MyNumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
+
+  def __next__(self):
+    if self.a <= 20:
+      x = self.a
+      self.a += 1
+      return x
+    else:
+      raise StopIteration
+
+myclass = MyNumbers()
+myiter = iter(myclass)
+
+for x in myiter:
+  print(x)
+
+OUTPUT:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
