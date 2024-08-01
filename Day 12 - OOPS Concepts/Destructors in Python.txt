@@ -28,4 +28,29 @@ del obj
 OUTPUT: 
 Employee created.
 destructor called and Employee is deleted
+****************************************************************
 
+Circular Reference: python detects the cyclic reference & remove it but custom destructors are uncollectable from python garbage collector. In this case the instance will live in memory for as long as the application run.
+
+class A:#parent class
+	def __init__(self, bb):
+		self.b = bb
+
+class B:#child class
+	def __init__(self):
+		self.a = A(self)
+	def __del__(self):
+		print("die")
+
+def fun():
+	b = B() #instance created
+fun() #function call
+
+OUTPUT: die
+
+
+Advantages of Destructors:
+1) Automatic cleanup
+2) Consistent behaviour
+3) Easy to use
+4) Help with debugging
