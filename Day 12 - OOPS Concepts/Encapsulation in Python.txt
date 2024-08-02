@@ -1,2 +1,5 @@
-Encapsulation: It is a concept of wrapping data and object in one unit called class. It puts restrictions on the access of the variables and methods that can directly prevent the accidental modifications.
+Encapsulation: It is a concept of wrapping data and object in one unit called class.
+It puts restrictions on the access of the variables and methods that can directly prevent the accidental modifications.
 Like a private variable cannot access by the outer classes or methods.
+
+
