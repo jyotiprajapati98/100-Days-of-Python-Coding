@@ -2,4 +2,8 @@ Encapsulation: It is a concept of wrapping data and object in one unit called cl
 It puts restrictions on the access of the variables and methods that can directly prevent the accidental modifications.
 Like a private variable cannot access by the outer classes or methods.
 
+Types of member access:
+Private
+Protected
+Public
 
