@@ -7,3 +7,6 @@ Private
 Protected
 Public
 
+Private Members: Members with double underscores (__) are private. They are intended to be accessed only within the class where they are defined. Python uses name mangling to make these members harder to access from outside the class.
+
+Protected Members: Members with a single underscore (_) are protected. They are intended for use within the class and its subclasses. This is a convention and does not enforce strict access control.
