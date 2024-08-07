@@ -1,0 +1,99 @@
+Polymorphism: Same functions name can be used for different purposed by changing the number of parameters or arguments. The word polymorphism means different forms.
+
+Example:
+*Builtin methods:
+
+# len() being used for a string
+print(len("geeks"))
+# len() being used for a list
+print(len([10, 20, 30]))
+#Here len() is a buildin function in Python.
+
+
+*User defined Polymorphism method:
+Example:
+#user defined polymorphism method
+
+def add(x, y, z = 0): 
+    return x + y+z
+
+# Driver code 
+print(add(5, 3))
+print(add(5, 3, 4))
+
+OUTPUT:
+8
+12
+
+
+Polymorphism can be used with different concepts such as:
+1) Polymorphism with Classes:
+Example:
+class India():
+    def capital(self):
+        print("New Delhi")
+    
+    def flower(self):
+        print("Lotus")
+
+class USA():
+    def capital(self):
+        print("Washingtan DC")
+    
+    def flower(self):
+        print("Rose")
+
+#create objects
+obj_India = India()
+obj_Usa = USA()
+
+for country in (obj_India, obj_Usa):
+    country.capital()
+    country.flower()
+
+******************OUTPUT****************************:
+New Delhi
+Lotus
+Washingtan DC
+Rose
+
+2) Polymorphism with Inheritence: Lets define methods with same in parent class and child class. In inheritance the child class inherits the method from parent class. Here child class can modify the inherited method.
+Redefining the inherited methods in the class is called as Method Overriding. Here the parameters will be same but the method body is updated.
+
+Example:
+class Bird:
+  def intro(self):
+    print("There are many types of birds.")
+    
+  def flight(self):
+    print("Most of the birds can fly but some cannot.")
+  
+class sparrow(Bird):
+  def flight(self):
+    print("Sparrows can fly.")
+    
+class ostrich(Bird):
+  def flight(self):
+    print("Ostriches cannot fly.")
+    
+obj_bird = Bird()
+obj_spr = sparrow()
+obj_ost = ostrich()
+
+obj_bird.intro()
+obj_bird.flight()
+
+obj_spr.intro()
+obj_spr.flight()
+
+obj_ost.intro()
+obj_ost.flight()
+
+OUTPUT***************
+
+There are many types of birds.
+Most of the birds can fly but some cannot.
+There are many types of birds.
+Sparrows can fly.
+There are many types of birds.
+Ostriches cannot fly.
