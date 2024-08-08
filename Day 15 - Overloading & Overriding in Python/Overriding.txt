@@ -1,0 +1,33 @@
+Overriding: It is a run time polymorphism where name and parameters of the method will be same for the parent and child classe both.
+
+Example:
+class Parent():
+    
+    def __init__(self):
+        self.value = "Inside the Parent Method"
+        
+    def show(self):
+        print(self.value)
+        
+class Child(Parent):
+    
+    def __init__(self):
+        #super() is use to call parent constructors
+        
+        super().__init__()
+        self.value = "Inside the Child Class"
+        
+    
+    def show(self):
+        print(self.value)
+        
+#driver code 
+ob1 = Parent()
+ob2 = Child()
+ob1.show()
+ob2.show()
+
+
+OUTPUT:
+Inside the Parent Method
+Inside the Child Class
