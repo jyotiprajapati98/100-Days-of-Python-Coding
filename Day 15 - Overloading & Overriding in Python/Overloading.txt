@@ -1,0 +1,49 @@
+Overloading: Method overloading is a compile time polymorphism. Whereas the function name is same but the arguments will be different.
+NOTE: Python does't support the method overloading. If we perform then it will consider the new method.
+
+Example:
+
+def add(datatype, *args): 
+    #args can take multiple arguments
+    
+	if datatype =='int': 
+		answer = 0
+
+	if datatype =='str': 
+		answer ='' 
+
+	for x in args: 
+		answer = answer + x 
+
+	print(answer) 
+
+# Integer 
+add('int', 20, 6) 
+
+# String 
+add('str', 'Hi ', 'Jyoti') 
+
+OUTPUT
+26
+Hi Jyoti
+
+******************************************
+To archive the Method Overloading "NONE" can be used with method arguments.
+
+Example:
+def add(a=None, b=None):
+    
+    if a != None and b == None:
+        print(a)
+    else:
+        print(a+b)
+
+#call the method 
+add(10, 5)
+add(11)
+
+*****************OUTPUT*******************
+15
+11
+
+
