@@ -9,4 +9,21 @@ file : (Optional) An object with a write method. Default :sys.stdout
 flush : (Optional) A Boolean, specifying if the output is flushed (True) or buffered (False). Default: False
 Return Type: It returns output to the screen.
 
+Example:
+name = "Jyoti"
+age = 26
 
+print("Name", name)
+print("Age", age)
+
+******************OUTPUT******************
+Name Jyoti
+Age 26
+
+Example:
+name = "Jyoti"
+age = 26
+print("Hello, my name is", name, " and I am", age, "years old.")
+
+******************OUTPUT******************
+Hello, my name is Jyoti  and I am 26 years old.
