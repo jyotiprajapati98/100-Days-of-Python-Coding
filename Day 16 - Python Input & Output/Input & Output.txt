@@ -1,0 +1,12 @@
+1) Python print() function: It is use to print the message on the screen. 
+Syntax : print(value(s), sep= ‘ ‘, end = ‘\n’, file=file, flush=flush)
+
+Parameters in print(): 
+value(s): Any value, and as many as you like.
+sep='separator' : (Optional) Specify how to separate the objects.
+end='end': (Optional) Specify what to print at the end.Default : '\n'
+file : (Optional) An object with a write method. Default :sys.stdout
+flush : (Optional) A Boolean, specifying if the output is flushed (True) or buffered (False). Default: False
+Return Type: It returns output to the screen.
+
+
