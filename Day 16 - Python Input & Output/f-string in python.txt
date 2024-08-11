@@ -7,5 +7,35 @@ Example:
 name= "Jyoti"
 print(f"My name is {name} & {name} means light")
 
-*************OUTPUT***************************
+*************OUTPUT********************
 My name is Jyoti & Jyoti means light
+
+b) print Date:
+Example:
+
+import datetime
+today = datetime.datetime.today()
+print(f"{today: %B %d, %Y}")
+
+*************OUTPUT********************
+August 11, 2024
+
+c) evaluate expression:
+Example:
+eng = 75
+math = 80
+AI = 95
+print(f"Jyoti got {eng + math + AI} from 300")
+
+*************OUTPUT********************
+Jyoti got 250 from 300
+
+d) Backslash cannot be use: It cannot use directly with f-string but we can't put in the variable.
+Example:
+#ord() is return the unicode order of the keyword or  specified character
+newline = ord('\n')
+print(f"newline : {newline}")
+
+*************OUTPUT********************
+newline : 10
+
