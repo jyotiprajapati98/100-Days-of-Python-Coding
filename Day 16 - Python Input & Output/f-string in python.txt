@@ -1,0 +1,11 @@
+f-string: it is use to formate the string literals or string interpolation.
+The f-string is same as the str.format().
+f-string can use for:
+
+a) print variable:
+Example:
+name= "Jyoti"
+print(f"My name is {name} & {name} means light")
+
+*************OUTPUT***************************
+My name is Jyoti & Jyoti means light
