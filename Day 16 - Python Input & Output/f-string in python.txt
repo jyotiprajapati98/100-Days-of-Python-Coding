@@ -39,3 +39,39 @@ print(f"newline : {newline}")
 *************OUTPUT********************
 newline : 10
 
+e) Inline comments not supported by f-string:
+Example:
+f"Jyoti is {26 #years} old."
+
+*************OUTPUT********************
+  File "/home/main.py", line 1
+    print(f"Jyoti is {26 #years} old.")
+                                      ^
+SyntaxError: f-string expression part cannot include '#'
+
+F) Dictionaries with f-string: Make sure that if you are using double quotes(") with f-string then use single quotes(') inside the f-string vice-versa.
+Otherwise throws syntax error.
+
+Example:
+detail = {'id': 102, 'name': 'Jyoti'}
+print(f"id of {detail["name"]} is {detail["id"]}")
+
+*************OUTPUT********************
+  File "/home/main.py", line 2
+    print(f"id of {detail["name"]} is {detail["id"]}")
+                           ^^^^
+SyntaxError: f-string: unmatched '['
+
+Correct way:
+detail = {'id': 102, 'name': 'Jyoti'}
+#print(f"id of {detail["name"]} is {detail["id"]}")
+
+#correct way to use
+print(f"id of {detail['name']} is {detail['id']}")
+
+*************OUTPUT********************
+id of Jyoti is 102
+
+
+
+
