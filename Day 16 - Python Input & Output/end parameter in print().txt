@@ -1,1 +1,9 @@
  end parameter in print()
+
+Example:
+# ends the output with a space
+print("Welcome to", end = ' ')
+print("World", end= ' ')
+
+OUTPUT
+Welcome to World 
