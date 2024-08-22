@@ -1,4 +1,4 @@
- end parameter in print()
+end parameter in print(): It is use to print without new line. The end can also be helpful for concatenation in python. By using with For Loop continue print is also possible.
 
 Example:
 # ends the output with a space
