@@ -1,4 +1,0 @@
-Using String Modulo Operator(%)
-Using Format Method
-Using The String Method
-Python’s Format Conversion Rule

@@ -1,0 +1,22 @@
+Output formatting: In python the output formatting is use to present the program output in different ways.
+Ways to format using String Method:
+
+Using String Modulo Operator(%): It is use for string formatting.
+Example:
+#string modulo operator(%)
+print("Hello : %2d, World : %5.1f" % (1, 05.333)) 
+print("All students are : %3d, girls : %2d" % (320, 120))   # print integer value
+print("%7.3o" % (25))   # print octal value
+print("%10.3E" % (356.08977))   # print exponential value
+
+
+OUTPUT:
+Hello :  1, World :   5.3
+All students are : 320, girls : 120
+    031
+ 3.561E+02
+
+
+Using Format Method
+Using The String Method
+Python’s Format Conversion Rule
