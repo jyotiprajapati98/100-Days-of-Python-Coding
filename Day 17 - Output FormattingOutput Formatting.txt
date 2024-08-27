@@ -1,7 +1,7 @@
 Output formatting: In python the output formatting is use to present the program output in different ways.
 Ways to format using String Method:
 
-Using String Modulo Operator(%): It is use for string formatting.
+A) Using String Modulo Operator(%): It is use for string formatting.
 Example:
 #string modulo operator(%)
 print("Hello : %2d, World : %5.1f" % (1, 05.333)) 
@@ -16,7 +16,56 @@ All students are : 320, girls : 120
     031
  3.561E+02
 
+The general syntax for the placeholders are:
+%[flags][width][.precision]type
 
-Using Format Method
-Using The String Method
-Python’s Format Conversion Rule
+Example: %5.1f, f means float. Precision is denoted by the '.' in the number.
+
+B) Using Format Method: Here the values are explicitly supplied or referred to by the order in which they comes in format(). 
+It basically substitute the variable values.
+Example:
+print('I love {} for "{}!"'.format('Google', 'R&D'))
+print('{0} and {1}'.format('Me', 'Google'))
+
+OUTPUT:
+I love Google for "R&D!"
+Me and Google
+
+C) Using The String Method: The output is formatted by using the slicing and concatenation operations. It includes str.ljust(), str.rjust(), and str.centre().
+
+Example:
+completeString = "I am wokring as Google R&D Department"
+
+print("center alignment")
+print(completeString.center(40, '#'))
+
+print("left alignment")
+print(completeString.ljust(40, '-'))
+
+print("right alignment")
+print(completeString.rjust(40, '-'))
+
+OUTPUT:
+center alignment
+#I am wokring as Google R&D Department##
+left alignment
+I am wokring as Google R&D Department---
+right alignment
+---I am wokring as Google R&D Department
+
+
+D) Python’s Format Conversion Rule: The python uses different conversion charecters such as:
+d: decimal integer
+b: binary format
+o: octal format
+u: obsolte and equivalent to 'd'
+x or X: Hexadecimal format
+e or E: Exponential notation
+f or F: floating point decimal
+g or G: General format
+c: single charecter
+r: String format repr()
+s: String format str()
+%: percentage
+
+
