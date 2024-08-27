@@ -1,0 +1,27 @@
+input(prompt): When programar wants to take input from the users then they can use the input().
+Example:
+val =  input("enter your salary: ") # we can add \n here for line break
+print(val)
+
+OUTPUT:
+enter your salary: 1500000
+1500000
+
+Typecasting in Python:
+a) int(input("write the statement to take input"))
+Example:
+n = int(input("enter salary: "))
+print(n)
+print(type(n))
+
+m = float(input("enter salary: "))
+print(m)
+print(type(m))
+
+OUTPUT:
+enter salary: 1500000
+1500000
+<class 'int'>
+enter salary: 1500000
+1500000.0
+<class 'float'>
