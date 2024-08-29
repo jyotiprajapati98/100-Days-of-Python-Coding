@@ -1,0 +1,7 @@
+Methods to take multiple inputs from users in Python:
+A) split(): It is use to split string in Python but it can also be use to break the inputs with the help of separator.
+If the seperator is not provided then white spaces are considered as seperator.
+Example:
+
+B) map(): 
+C) List Comprehension: 
