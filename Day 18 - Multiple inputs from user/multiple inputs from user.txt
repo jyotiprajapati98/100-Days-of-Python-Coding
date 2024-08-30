@@ -1,7 +1,37 @@
 Methods to take multiple inputs from users in Python:
 A) split(): It is use to split string in Python but it can also be use to break the inputs with the help of separator.
 If the seperator is not provided then white spaces are considered as seperator.
-Example:
+
+Syntax:
+        input().split(separator, maxsplit)
+Example 1: Simple
+word = 'Hello, World'
+# Splits at ','
+print(word.split(','))
+
+word = 'Hello#World'
+# Splitting at '#'
+print(word.split('#'))
+
+***************OUTPUT***************
+['Hello', ' World']
+['Hello', 'World']
+
+EXAMPLE 2:
+a, b = input("enter values: ").split()
+print("Val 1: ",a)
+print("Val 2: ",b)
+
+#using map
+map1 = list(map(int, input("enter multiple values: ").split()))
+print("list values: ", map1)
+
+****************OUTPUT*****************
+enter values: 10 20
+Val 1:  10
+Val 2:  20
+enter multiple values: 10 20 30 40
+list values:  [10, 20, 30, 40]
 
 B) map(): 
 C) List Comprehension: 
