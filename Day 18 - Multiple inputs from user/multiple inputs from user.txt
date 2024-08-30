@@ -33,5 +33,37 @@ Val 2:  20
 enter multiple values: 10 20 30 40
 list values:  [10, 20, 30, 40]
 
-B) map(): 
-C) List Comprehension: 
+B) map() with split(): map() by combining with split() convert the substrings into the desired data types & assign them to variable.
+SYNTAX:
+variable1, variable2, variable3, .... = map(datatype, input().split())
+
+EXAMPLE:
+a, b = map(int, input("enter 2 values: ").split())
+print("multiplication: ", a*b)
+
+a, b = map(float, input("enter 2 values: ").split())
+print("multiplication: ", a*b)
+
+#using strings
+name, age = input("enter name and age: ").split()
+print("Hello, "+ name + "! Your age is "+age)
+
+*********************OUTPUT***********************
+enter 2 values: 10 20
+multiplication:  200
+enter 2 values: 10.5 10.4
+multiplication:  109.2
+enter name and age: Jyoti 26
+Hello, Jyoti! Your age is 26
+
+C) List Comprehension: list is use to create python list and also used to get the multiple inputs from a user.
+
+EXAMPLE:
+x, y = [int(x) for x in input("enter two values: ").split()]
+print("first:", x)
+print("second:", y)
+
+*************************** OUTPUT *************************
+enter two values: 5 8
+first: 5
+second: 8
