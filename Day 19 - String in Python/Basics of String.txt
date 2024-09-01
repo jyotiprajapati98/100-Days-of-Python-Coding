@@ -1,0 +1,2 @@
+What is String: In python the String represents the sequence of charecters.
+The string is immutable means once you created you can't edit it. It is use to store and manipulate the data.
