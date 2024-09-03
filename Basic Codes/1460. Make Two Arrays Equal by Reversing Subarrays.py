@@ -12,3 +12,8 @@ class Solution:
             if target[i] != arr[i]:
                 return False
         return True
+
+    list1 = [1,2,3,4]
+    list2 = [4,2,3,5]
+    print(canBeEqual(list1, list1))
+
