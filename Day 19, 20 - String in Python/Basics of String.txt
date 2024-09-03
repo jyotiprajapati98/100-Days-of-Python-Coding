@@ -1,0 +1,79 @@
+What is String: In python the String represents the sequence of charecters.
+The string is immutable means once you created you can't edit it. It is use to store and manipulate the data.
+
+Syntax:
+string_variable = "Hello, World!"
+
+EXAMPLE:
+string1 = "Hello, World!"
+print(string1)
+print(type(string1))
+
+OUTPUT:
+Hello, World!
+<class 'str'>
+
+*Create a string in Python: String can be created with single(' ') or double(" ") or even triple(""" """) quotes.
+
+EXAMPLE:
+string1 = 'Hello, World!'
+print(string1)
+print(type(string1))
+
+string2 = "Hello, World!"
+print(string2)
+print(type(string2))
+
+string3 = """Hello World!"""
+print(string3)
+print(type(string3))
+
+string4 = """Hello 
+World!
+Multiline"""
+print(string4)
+print(type(string4))
+
+OUTPUT:
+Hello, World!
+<class 'str'>
+Hello, World!
+<class 'str'>
+Hello World!
+<class 'str'>
+Hello 
+World!
+Multiline
+<class 'str'>
+
+*Accessing characters in Python String: String can be accessed by using the method of Indexing. 
+It also allows the negative address references to access back characters example: -1 for last characters, -2 for last character, and so on.
+
+A) Positive Indexing:
+EXAMPLE:
+string1 = 'Hello, World!'
+print("Complete String: ", string1)
+print("first character of String: ", string1[0])
+
+OUTPUT:
+Complete String:  Hello, World!
+first character of String:  H
+
+
+B) Negative Indexing: To access the characters the negative indexs are using example -3, -2, etc.
+EXAMPLE:
+string1 = 'Hello, World!'
+print("Complete String: ", string1)
+print("-1 character of String: ", string1[-1])
+print("-5 character of String: ", string1[-5])
+
+OUTPUT:
+Complete String:  Hello, World!
+-1 character of String:  !
+-5 character of String:  o
+
+
+
+
+
+
