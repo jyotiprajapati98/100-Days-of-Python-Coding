@@ -1,1 +1,5 @@
-Logical Operations on String in Python
+Logical Operations on String in Python: The boolean opertors (and, or, not) works with String.
+
+The repr() is use to print the String with quotes.
+EXAMPLE:
+
