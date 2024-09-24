@@ -1,0 +1,1 @@
+Python Docstrings: It is like a comment or small documentation for classes and methods in the python script.
