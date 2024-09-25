@@ -1,1 +1,15 @@
 Python Docstrings: It is like a comment or small documentation for classes and methods in the python script.
+EXAMPLE:
+def my_docString():
+    ''' It contains the short documentation. 
+    It involves using triple quotes to enclose the documentation'''
+    return None
+
+print("using __doc__:")
+print(my_docString.__doc__)
+
+
+OUTPUT:
+using __doc__:
+ It contains the short documentation. 
+    It involves using triple quotes to enclose the documentation
